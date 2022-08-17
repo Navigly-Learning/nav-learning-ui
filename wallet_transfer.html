@@ -416,7 +416,7 @@ Page content START -->
                                 <!-- Title -->
                                 <h4 class="mb-3 border-bottom border-dark">Wallet Summary</h4>
 
-                                <!-- Price and detail -->
+                                <!-- Balance and detail -->
                                 <ul class="list-group list-group-borderless mb-2">
                                     <li class="list-group-item px-0 d-flex justify-content-between">
                                         <span class="h5 mb-0">Current Balance</span>
@@ -428,7 +428,8 @@ Page content START -->
                                     </li>
                                 </ul>
 
-                                <p class="text-dark fs-6"><strong>Last Transaction</strong> Pay Out to The University of Nairobi, Nairobi, total <strong class="fw-bolder text-danger">$250</strong></p>
+                                <p class="text-dark fs-6"><strong>Last Transaction</strong> Pay Out to The University of
+                                    Nairobi, Nairobi, total <strong class="fw-bolder text-danger">$250</strong></p>
 
                                 <!-- Button -->
                                 <div class="d-grid mb-2">
@@ -439,7 +440,8 @@ Page content START -->
 
                                 <!-- Content -->
                                 <p class="small mb-0 mt-2 text-dark">By completing any transactions, you agree to these
-                                    <a href="#"><strong>Terms of Service</strong></a></p>
+                                    <a href="#"><strong>Terms of Service</strong></a>
+                                </p>
 
                             </div>
                             <!-- Card total END -->
@@ -455,13 +457,83 @@ Page content START -->
                         <div class="card border bg-transparent rounded-3">
                             <!-- Card header -->
                             <div class="card-header bg-transparent border-bottom">
-                                <h3 class="h4 mb-3">Transaction History</h3>
+                                <h3 class="h4 mb-3">Transfer Funds To Other Navigly Accounts</h3>
                             </div>
 
                             <div class="card-body">
-                                
 
-                                
+                                <form class="row text-start g-3">
+                                    <!-- Reciever Email -->
+                                    <div class="col-md-6">
+                                        <label class="form-label">Email</label>
+                                        <input type="text" class="form-control" aria-label="Email of the reciever"
+                                            placeholder="Email of the reciever">
+                                    </div>
+
+                                    <!-- Reciever Phone Number -->
+                                    <div class="col-md-6">
+                                        <label class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control"
+                                            aria-label="Phone number of the reciever"
+                                            placeholder="Phone number of the reciever">
+                                    </div>
+
+                                    <!-- Amount -->
+                                    <div class="col-12">
+                                        <label class="form-label">Amount</label>
+                                        <input type="text" class="form-control" aria-label="Amount to transfer"
+                                            placeholder="Amount to transfer">
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <!-- Reciver details -->
+                                            <ul class="list-group list-group-borderless mb-2">
+                                                <li class="list-group-item px-0 d-flex justify-content-between">
+                                                    <span class="h5 mb-0">Beneficiary's Name</span>
+                                                    <span class="h5 mb-0 text-blue">John Doe</span>
+                                                </li>
+                                                <li class="list-group-item px-0 d-flex justify-content-between">
+                                                    <span class="h6 mb-0">Transaction Fee (0.02%)</span>
+                                                    <span class="h6 mb-0 text-blue">$12</span>
+                                                </li>
+                                                <li class="list-group-item px-0 mt-2 d-flex justify-content-between">
+                                                    <span class="h4 mb-0">Total Amount</span>
+                                                    <span class="h4 mb-0 text-danger">$250</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Note -->
+                                    <div class="col-md-6">
+                                        <label class="form-label">Note</label>
+                                        <textarea class="form-control" placeholder="A note to the beneficiary" id=""
+                                            cols="30" rows="5"></textarea>
+                                    </div>
+
+                                    <!-- Check box -->
+                                    <div class="col-md-12 my-4">
+                                        <div class="form-check mb-0">
+                                            <input type="checkbox" class="form-check-input" id="paymentConfirmation">
+                                            <label class="form-check-label" for="paymentConfirmation">I approve the
+                                                deduction of the
+                                                above stated amount from my wallet</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-lg-flex align-items-center justify-content-start">
+                                        <div class="me-4">
+                                            <button class="btn btn-danger-soft">Cancel</button>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-success">Complete Transfer</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+
                             </div>
 
                         </div>
