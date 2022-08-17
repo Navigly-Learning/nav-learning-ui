@@ -54,13 +54,17 @@
                     </div>
                   </div>
                   <!-- Phone -->
-                  <div class="mb-4">
+                  <div class="mb-4 w-100">
                     <label for="exampleInputPhone" class="form-label">Phone Number *</label>
                     <div class="input-group input-group-lg">
-                      <span class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
-                          class="bi bi-envelope-fill"></i></span>
-                      <input type="number" class="form-control border-0 bg-light rounded-end ps-1"
-                        placeholder="2547xxxxxxxx" id="exampleInputPhone" min="12" max="12" />
+                      <select class="form-select form-select-lg bg-light border-0 text-secondary rounded-start w-25">
+                        <option selected disabled>Country</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Kenya">Kenya</option>
+                      </select>
+                      <input type="number" class="form-control border-0 bg-light rounded-end ps-1 w-75"
+                        placeholder="Your phone number" id="exampleInputPhone"/>
                     </div>
                   </div>
                   <!-- Password -->
